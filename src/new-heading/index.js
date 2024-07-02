@@ -11,7 +11,7 @@ registerBlockType('gutenberg-special-blocks/new-heading', {
         content: {
             type: 'string',
             source: 'html',
-            selector: 'h2',
+            selector: 'h1',
         },
         textColor: {
             type: 'string',

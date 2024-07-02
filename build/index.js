@@ -167,6 +167,24 @@ function Edit({
     }),
     min: 0,
     max: 100
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Dimension Settings', 'gutenberg-special-blocks')
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Padding', 'gutenberg-special-blocks'),
+    value: padding,
+    onChange: newPadding => setAttributes({
+      padding: newPadding
+    }),
+    min: 0,
+    max: 100
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Margin', 'gutenberg-special-blocks'),
+    value: margin,
+    onChange: newMargin => setAttributes({
+      margin: newMargin
+    }),
+    min: 0,
+    max: 100
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.AlignmentToolbar, {
     value: textAlign,
     onChange: newAlignment => setAttributes({
@@ -218,7 +236,7 @@ __webpack_require__.r(__webpack_exports__);
     content: {
       type: 'string',
       source: 'html',
-      selector: 'h2'
+      selector: 'h1'
     },
     textColor: {
       type: 'string',

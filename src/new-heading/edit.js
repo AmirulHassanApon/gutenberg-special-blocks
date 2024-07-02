@@ -63,6 +63,23 @@ export default function Edit({ attributes, setAttributes }) {
                         max={100}
                     />
                 </PanelBody>
+                <PanelBody title={__('Dimension Settings', 'gutenberg-special-blocks')}>
+                    <RangeControl
+                        label={__('Padding', 'gutenberg-special-blocks')}
+                        value={padding}
+                        onChange={(newPadding) => setAttributes({ padding: newPadding })}
+                        min={0}
+                        max={100}
+                    />
+                    <RangeControl
+                        label={__('Margin', 'gutenberg-special-blocks')}
+                        value={margin}
+                        onChange={(newMargin) => setAttributes({ margin: newMargin })}
+                        min={0}
+                        max={100}
+                    />
+                </PanelBody>
+                
             </InspectorControls>
             <BlockControls>
                 <AlignmentToolbar
