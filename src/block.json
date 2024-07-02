@@ -4,7 +4,7 @@
 	"name": "create-block/gutenberg-special-blocks",
 	"version": "0.1.0",
 	"title": "Gutenberg Special Blocks",
-	"category": "widgets",
+	"category": "text",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
