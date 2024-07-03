@@ -16,7 +16,7 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Text Settings', 'gutenberg-special-blocks')}>
+                <PanelBody title={__('Text Field Settings', 'gutenberg-special-blocks')}>
                     <PanelColorSettings
                         title={__('Color Settings', 'gutenberg-special-blocks')}
                         colorSettings={[
@@ -25,6 +25,7 @@ export default function Edit({ attributes, setAttributes }) {
                                 onChange: (newColor) => setAttributes({ textColor: newColor }),
                                 label: __('Text Color', 'gutenberg-special-blocks'),
                             },
+
                             {
                                 value: backgroundColor,
                                 onChange: (newColor) => setAttributes({ backgroundColor: newColor }),
